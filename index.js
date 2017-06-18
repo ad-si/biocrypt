@@ -14,8 +14,16 @@ const questions = [
     q: 'Does the patient have dark hair?',
   },
   {
+    id: 'earlobe',
+    q: 'Is the patient\'s earlobe attached?',
+  },
+  {
     id: 'allTeeth',
     q: 'Does the patient still have all regular teeth?',
+  },
+  {
+    id: 'handFoldConnected',
+    q: 'Are the patient\'s hand folds connected?',
   },
   {
     id: 'wisdomTeeth',
@@ -24,14 +32,6 @@ const questions = [
   {
     id: 'toothFilling',
     q: 'Does the patient have tooth fillings?',
-  },
-  {
-    id: 'earlobe',
-    q: 'Is the patient\'s earlobe attached?',
-  },
-  {
-    id: 'handFoldConnected',
-    q: 'Are the patient\'s hand folds connected?',
   },
   {
     id: 'bothFeet',
@@ -67,7 +67,8 @@ const questions = [
   },
 ]
 
-module.exports = () => {
+module.exports = (id) => {
+  console.log(id)
   let candidates = clone(persons)
   const rl = readline.createInterface({
     input: process.stdin,
