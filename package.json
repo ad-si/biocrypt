@@ -1,0 +1,17 @@
+{
+  "name": "biocrypt",
+  "version": "0.1.0",
+  "main": "index.js",
+  "bin": {
+    "biocrypt": "cli.js"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "clone": "^2.1.1",
+    "common-tags": "^1.4.0",
+    "decision-tree": "^0.3.1"
+  }
+}
