@@ -68,7 +68,6 @@ const questions = [
 ]
 
 module.exports = (id) => {
-  console.log(id)
   let candidates = clone(persons)
   const rl = readline.createInterface({
     input: process.stdin,
